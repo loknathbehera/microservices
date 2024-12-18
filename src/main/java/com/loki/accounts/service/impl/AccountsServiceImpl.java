@@ -11,17 +11,16 @@ import com.loki.accounts.exception.CustomerAlreadyExistsException;
 import com.loki.accounts.exception.ResourceNotFoundException;
 import com.loki.accounts.mapper.AccountsMapper;
 import com.loki.accounts.mapper.CustomerMapper;
-import com.loki.accounts.service.iAccountsService;
+import com.loki.accounts.service.IAccountsService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.Random;
 
 @Service
 @AllArgsConstructor
-public class AccountsServiceImpl  implements iAccountsService {
+public class AccountsServiceImpl  implements IAccountsService {
 
     private AccountsRepository accountsRepository;
     private CustomerRepository customerRepository;
